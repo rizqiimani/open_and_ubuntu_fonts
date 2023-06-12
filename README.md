@@ -1,8 +1,8 @@
-# Open Fonts - [XDA Thread](https://forum.xda-developers.com/t/magisk-module-font-open-fonts.4446663/)
+# Open and Ubuntu Fonts
 
 ![Open Font](https://raw.githubusercontent.com/F3FFO/Open-Fonts/master/img/logo.png)
 
-This module helps you to replace your system fonts though Magisk.
+This module helps you to replace your system fonts through Magisk.
 
 **ATTENTION!** After several attempts I decided to replace only the main Android font: Roboto. This choice is the one I think is more correct as it is left to the user the possibility to choose other fonts without having to uninstall the module.
 
@@ -37,10 +37,11 @@ If you found this helpful, please consider supporting development with a [coffe]
   1. [Noto Sans](https://github.com/googlefonts/noto-fonts)
   2. [OpenSans](https://github.com/googlefonts/opensans)
   3. [Roboto-Flex](https://github.com/googlefonts/roboto-flex)
-  4. [NotoSans Mono](https://github.com/googlefonts/noto-fonts)
-  5. [JetBrains Mono](https://github.com/googlefonts/noto-fonts)
-  6. [Noto Emoji](https://github.com/googlefonts/noto-emoji)
-  7. [Twemoji](https://github.com/twitter/twemoji)
+  4. [Ubuntu](https://github.com/velitasali/ubuntu-font-android)
+  5. [NotoSans Mono](https://github.com/googlefonts/noto-fonts)
+  6. [JetBrains Mono](https://github.com/googlefonts/noto-fonts)
+  7. [Noto Emoji](https://github.com/googlefonts/noto-emoji)
+  8. [Twemoji](https://github.com/twitter/twemoji)
 
 ## Credits
 
@@ -51,6 +52,7 @@ If you found this helpful, please consider supporting development with a [coffe]
 - [Noto Sans/NotoSans Mono](https://github.com/googlefonts/noto-fonts)
 - [OpenSans](https://github.com/googlefonts/opensans)
 - [Roboto-Flex](https://github.com/googlefonts/roboto-flex)
+- [Ubuntu](https://github.com/velitasali/ubuntu-font-android)
 - [JetBrains Mono](https://github.com/googlefonts/noto-fonts)
 - [Noto Emoji](https://github.com/googlefonts/noto-emoji)
 - [Twemoji](https://github.com/twitter/twemoji)
@@ -63,11 +65,15 @@ The source code is available under [GPL-3.0](https://github.com/Magisk-Modules-A
 
 - Noto Sans/NotoSans Mono are available under the [SIL Open Font License v1.1](https://github.com/notofonts/noto-fonts/blob/main/LICENSE)
 - Roboto-Flex is available under the [SIL Open Font License v1.1](https://github.com/googlefonts/roboto-flex/blob/main/OFL.txt)
+- Ubuntu is available under the [Ubuntu Font License v1.0](https://github.com/velitasali/ubuntu-font-android/blob/master/LICENCE)
 - JetBrainsMono is available under the [SIL Open Font License v1.1](https://github.com/JetBrains/JetBrainsMono/blob/master/OFL.txt)
 - Noto Emoji is available under the [SIL Open Font License v1.1](https://github.com/googlefonts/noto-emoji/blob/main/fonts/LICENSE)
 - Twemoji is available under the [CC-BY 4.0](https://github.com/twitter/twemoji/blob/master/LICENSE-GRAPHICS)
 
 ## Change logs
+
+# v3.1.2
+- Added link for Ubuntu font
 
 # v3.1.1
 
