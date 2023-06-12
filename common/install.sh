@@ -22,6 +22,12 @@ robot_flex() {
 	FONT_URL=https://github.com/googlefonts/roboto-flex/raw/main/fonts/RobotoFlex%5BGRAD%2CXOPQ%2CXTRA%2CYOPQ%2CYTAS%2CYTDE%2CYTFI%2CYTLC%2CYTUC%2Copsz%2Cslnt%2Cwdth%2Cwght%5D.ttf
 	FONT_NAME_ITALIC=""
 }
+ubuntu_font() {
+	FONT_NAME="Ubuntu"
+	FONT_URL=https://github.com/velitasali/ubuntu-font-android/raw/master/allfonts/Ubuntu-Regular.ttf
+	FONT_NAME_ITALIC="Ubuntu-Italic"
+	FONT_URL_ITALIC=https://github.com/velitasali/ubuntu-font-android/raw/master/allfonts/Ubuntu-Italic.ttf
+}
 noto_sans_mono() {
 	FONT_NAME="NotoSansMono"
 	FONT_URL=https://github.com/notofonts/notofonts.github.io/raw/main/fonts/NotoSansMono/unhinted/variable-ttf/NotoSansMono%5Bwdth%2Cwght%5D.ttf
@@ -148,7 +154,7 @@ ui_print "- Do you want to replace system font?"
 ui_print "  [Vol+ = yes, Vol- = no]"
 if chooseport 30; then
 	ui_print "    Choose between:"
-	ui_print "      NotoSans, OpenSans, Roboto-Flex"
+	ui_print "      NotoSans, OpenSans, Roboto-Flex, Ubuntu"
 	sleep 3
 	ui_print ""
 	ui_print "    Select:"
@@ -168,6 +174,13 @@ if chooseport 30; then
 		ui_print "    -> Roboto-Flex [Vol+ = yes, Vol- = no]"
 		if chooseport 3; then
 			robot_flex
+			NEXT_SELECTION=0
+		fi
+	fi
+	if [ "${NEXT_SELECTION}" -eq 1 ]; then
+		ui_print "    -> Ubuntu [Vol+ = yes, Vol- = no]"
+		if chooseport 3; then
+			ubuntu_font
 		else
 			SKIP_INSTALLATION=1
 		fi
@@ -229,10 +242,10 @@ if chooseport 30; then
 
 		install_mono_font
 	else
-		ui_print "  Fonts will not be replaced!"
+		ui_print "  Monospace Fonts will not be replaced!"
 	fi
 else
-	ui_print "  Fonts will not be replaced!"
+	ui_print "  Monospace Fonts will not be replaced!"
 fi
 
 # replace emoji
@@ -265,9 +278,9 @@ if chooseport 30; then
 
 		install_emoji_font
 	else
-		ui_print "  Fonts will not be replaced!"
+		ui_print "  Emoji will not be replaced!"
 	fi
 else
-	ui_print "  Fonts will not be replaced!"
+	ui_print "  Emoji will not be replaced!"
 fi
 clean_up
