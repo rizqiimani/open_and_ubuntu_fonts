@@ -206,9 +206,9 @@ if chooseport 30; then
 		else
     		ui_print "  Android clock font not replaced."
   		fi
-		ui_print "  Fonts replaced!"
+		ui_print "  System Fonts replaced!"
 	else
-		ui_print "  Fonts will not be replaced!"
+		ui_print "  System Fonts will not be replaced!"
 	fi
 fi
 
