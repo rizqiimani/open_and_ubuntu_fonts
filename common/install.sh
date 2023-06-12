@@ -24,7 +24,7 @@ robot_flex() {
 }
 ubuntu_font() {
 	FONT_NAME="Ubuntu"
-	FONT_URL=https://github.com/velitasali/ubuntu-font-android/raw/master/allfonts/Ubuntu-Regular.ttf
+	FONT_URL=https://github.com/velitasali/ubuntu-font-android/raw/master/Ubuntu_Font.ttf
 	FONT_NAME_ITALIC="Ubuntu-Italic"
 	FONT_URL_ITALIC=https://github.com/velitasali/ubuntu-font-android/raw/master/allfonts/Ubuntu-Italic.ttf
 }
@@ -114,7 +114,7 @@ install_mono_font() {
 	cp_ch "$TMPDIR"/"${FONT_NAME}.ttf" $STANDARD_FOLDER/"$STANDARD_FONT_NAME"
 
 	ln -s ./"$STANDARD_FONT_NAME" $STANDARD_FOLDER/CutiveMono.ttf
-	ui_print "  Fonts replaced!"
+	ui_print "  Mono Fonts replaced!"
 }
 install_emoji_font() {
 	STANDARD_FONT_NAME="NotoColorEmoji.ttf"
@@ -132,7 +132,7 @@ install_emoji_font() {
 	elif [ $MANUFACTER = "HTC" ]; then
 		ln -s ./"$STANDARD_FONT_NAME" $STANDARD_FOLDER/HTC_ColorEmoji.ttf
 	fi
-	ui_print "  Fonts replaced!"
+	ui_print "  Emoji replaced!"
 }
 check_status() {
 	if [ "${STATUS}" -eq 0 ]; then
